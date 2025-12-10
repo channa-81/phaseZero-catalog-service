@@ -7,8 +7,13 @@ A Spring Boot REST API for managing products. Built with clean code, proper erro
 ### Prerequisites
 - Java 17+
 - Maven 4.0.0
+- H2 in-memory database
 
-
+### Why H2 Database?
+- This project uses the H2 in-memory database because it is lightweight, fast, and requires no installation.
+- It allows the application to run immediately without setting up an external database.
+- H2 works seamlessly with Spring Boot and JPA, making it easy to test, develop, and verify APIs using the built-in H2 console.
+- Since the assignment requires an in-memory storage option, H2 provides a clean and realistic way to persist data during runtime.
 
 ### View Database (Optional)
 H2 Console: `http://localhost:8080/h2-console`
