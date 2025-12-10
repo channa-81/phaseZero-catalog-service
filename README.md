@@ -15,6 +15,10 @@ A Spring Boot REST API for managing products. Built with clean code, proper erro
 - H2 works seamlessly with Spring Boot and JPA, making it easy to test, develop, and verify APIs using the built-in H2 console.
 - Since the assignment requires an in-memory storage option, H2 provides a clean and realistic way to persist data during runtime.
 
+### Schema Management
+- The schema is automatically created and updated by Hibernate based on the JPA entity definitions.
+- No schema.sql file is needed, as Spring Boot generates the tables using the entity annotations at startup.
+
 ### View Database (Optional)
 H2 Console: `http://localhost:8080/h2-console`
 - URL: `jdbc:h2:mem:catalogdb`
